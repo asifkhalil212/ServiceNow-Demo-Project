@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_483535_serviceno_demo</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 10:30:34</sys_created_on>
+        <sys_id>22f6b6ef0709501093d5fd1e7c1ed0f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_483535_serviceno_demo</sys_name>
+        <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
+        <sys_update_name>ua_table_licensing_config_22f6b6ef0709501093d5fd1e7c1ed0f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 10:30:34</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</application>
+        <file_path/>
+        <instance_id>663890f96f46da0056007b2f5d3ee4ba</instance_id>
+        <instance_name>dev20817</instance_name>
+        <name>ua_table_licensing_config_22f6b6ef0709501093d5fd1e7c1ed0f0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_483535_serviceno_demo</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-06-03 10:30:34</sys_created_on><sys_id>22f6b6ef0709501093d5fd1e7c1ed0f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_483535_serviceno_demo</sys_name><sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package><sys_policy/><sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope><sys_update_name>ua_table_licensing_config_22f6b6ef0709501093d5fd1e7c1ed0f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-06-03 10:30:34</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>1060464349</payload_hash>
+        <record_name>x_483535_serviceno_demo</record_name>
+        <reverted_from/>
+        <source>b9f80ca70781501093d5fd1e7c1ed0c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 10:30:34</sys_created_on>
+        <sys_id>22f6b6ef0709501093d5fd1e7c1ed0f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17279bb905d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 10:30:34</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>6af6b6ef670950109bc28a4bd2e970f1</update_guid>
+        <update_guid_history>6af6b6ef670950109bc28a4bd2e970f1:1060464349</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 10:31:53</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>44e3448609904922a42eeb03be8edc59</sys_id>
+        <sys_metadata>22f6b6ef0709501093d5fd1e7c1ed0f0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_483535_serviceno_demo</sys_name>
+        <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
+        <sys_scope_delete display_value="">7c461d52da8c45aea5ac0df3d6b99c84</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_22f6b6ef0709501093d5fd1e7c1ed0f0</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_22f6b6ef0709501093d5fd1e7c1ed0f0">22f6b6ef0709501093d5fd1e7c1ed0f2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 10:31:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

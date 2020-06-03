@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>EnsembleUtilLogs</name>
+        <order/>
+        <roles>admin</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 20:05:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>40aaf0ff074d501093d5fd1e7c1ed03d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EnsembleUtilLogs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
+        <sys_update_name>sys_ui_application_40aaf0ff074d501093d5fd1e7c1ed03d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 20:05:45</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</application>
+        <file_path/>
+        <instance_id>663890f96f46da0056007b2f5d3ee4ba</instance_id>
+        <instance_name>dev20817</instance_name>
+        <name>sys_ui_application_40aaf0ff074d501093d5fd1e7c1ed03d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>EnsembleUtilLogs</name><order/><roles>admin</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-06-03 20:05:45</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>40aaf0ff074d501093d5fd1e7c1ed03d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EnsembleUtilLogs</sys_name><sys_overrides/><sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package><sys_policy/><sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope><sys_update_name>sys_ui_application_40aaf0ff074d501093d5fd1e7c1ed03d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-06-03 20:05:45</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>199670065</payload_hash>
+        <record_name>EnsembleUtilLogs</record_name>
+        <reverted_from/>
+        <source>b9f80ca70781501093d5fd1e7c1ed0c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 20:05:45</sys_created_on>
+        <sys_id>18aaf0ff074d501093d5fd1e7c1ed03e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1727bca28ac0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 20:05:45</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>50aaf0ffa84d5010f69ff11357a8513e</update_guid>
+        <update_guid_history>50aaf0ffa84d5010f69ff11357a8513e:199670065</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-06-03 20:19:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>9e0bb6acc3824db6a3f97720d5248d84</sys_id>
+        <sys_metadata>40aaf0ff074d501093d5fd1e7c1ed03d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EnsembleUtilLogs</sys_name>
+        <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
+        <sys_scope_delete display_value="">7c461d52da8c45aea5ac0df3d6b99c84</sys_scope_delete>
+        <sys_update_name>sys_ui_application_40aaf0ff074d501093d5fd1e7c1ed03d</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_40aaf0ff074d501093d5fd1e7c1ed03d">18aaf0ff074d501093d5fd1e7c1ed03e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-06-03 20:19:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
