@@ -3,19 +3,22 @@
         <abort_action>false</abort_action>
         <access>package_private</access>
         <action_delete>false</action_delete>
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection/>
+        <collection>x_483535_serviceno_u_ensembleutillog</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="x_483535_serviceno_u_ensembleutillog">type=2^timeloggedONToday@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()^EQ<item endquery="false" field="type" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="false" field="timelogged" goto="false" newquery="false" operator="ON" or="false" value="Today@javascript:gs.beginningOfToday()@javascript:gs.endOfToday()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>Business Rule on Ensemble Logs</name>
@@ -27,9 +30,29 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
+    var currentDate = new GlideDate();
+    currentDate.getByFormat("yyyy-dd-MM");
+    var currentDateTime = currentDate + " 17:00:00"; // 5 PM
+
+    if (current.timelogged <= currentDateTime) {
+        var configurationItem = current.cmdb_ci;
+        var shortDescription = current.short_description;
+        var assignmentGroup = current.assignment_group;
+        var resolution_code = current.text;
+
+        var problemObj = new GlideRecord('incident');
+
+        problemObj.short_description = "Error";
+        problemObj.caller_id = "Asif";
+        //problemObj.cmdb_ci = configurationItem;
+        //problemObj.assignment_group = assignmentGroup;
+        //problemObj.resolution_code = resolution_code;
+
+        problemObj.insert();
+        gs.addInfoMessage(problemObj.number + " Incident has been created...");
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -38,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99a41fbb07c1901093d5fd1e7c1ed059</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name>Business Rule on Ensemble Logs</sys_name>
         <sys_overrides/>
         <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
@@ -46,9 +69,9 @@
         <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
         <sys_update_name>sys_script_99a41fbb07c1901093d5fd1e7c1ed059</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-06-04 08:48:29</sys_updated_on>
+        <sys_updated_on>2020-06-07 20:00:54</sys_updated_on>
         <template/>
-        <when>async</when>
+        <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=99a41fbb07c1901093d5fd1e7c1ed059"/>
 </record_update>

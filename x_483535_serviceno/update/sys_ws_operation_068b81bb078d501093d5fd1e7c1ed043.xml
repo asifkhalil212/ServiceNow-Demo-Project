@@ -11,16 +11,17 @@
 
     // implement resource here
 	var gr;
-	var inc =[];
+	var events =[];
 	var requestBody = request.body;
 	var requestData = requestBody.data;
 	
 	for(i = 0 ; i < requestData.length ; i++ )
 	{
-		gr = new GlideRecord('u_ensemble_error_events');
+		gr = new GlideRecord('x_483535_serviceno_u_ensembleutillog');
 		gr.initialize();
+		
 		gr.id = requestData[i].id;
-		gr.configname = requestData[i].nonfigname;
+		gr.configname = requestData[i].configname;
 		gr.job = requestData[i].job;
 		gr.messageid = requestData[i].messageid;
 		gr.sessionid = requestData[i].sessionid;
@@ -36,7 +37,7 @@
 		
 		gr.query();
 		if(gr.next()){
-			inc.push({
+			events.push({
 								
 				'ID': gr.id,
 				'ConfigName' : gr.configname,
@@ -53,7 +54,7 @@
 				});	
 		}
 	}
-response.setBody(inc);
+response.setBody(events);
 })(request, response);]]></operation_script>
         <operation_uri>/api/x_483535_serviceno/scripted_rest_api/events</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
@@ -68,14 +69,14 @@ response.setBody(inc);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-06-03 21:22:02</sys_created_on>
         <sys_id>068b81bb078d501093d5fd1e7c1ed043</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>ScriptedCreateMultipleEvents</sys_name>
         <sys_package display_value="ServiceNow Demo Project" source="x_483535_serviceno">b315c4630781501093d5fd1e7c1ed0c5</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Demo Project">b315c4630781501093d5fd1e7c1ed0c5</sys_scope>
         <sys_update_name>sys_ws_operation_068b81bb078d501093d5fd1e7c1ed043</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-06-03 21:51:03</sys_updated_on>
+        <sys_updated_on>2020-06-04 07:15:07</sys_updated_on>
         <web_service_definition display_value="Scripted REST API ">4a4bcd7b078d501093d5fd1e7c1ed066</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

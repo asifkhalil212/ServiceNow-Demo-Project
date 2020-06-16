@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="EnsembleUtilLog" max_length="40" name="x_483535_serviceno_u_ensembleutillog" type="collection">
+    <element label="EnsembleUtilLog" max_length="40" name="x_483535_serviceno_u_ensembleutillog" sizeclass="751" type="collection">
         <element label="ConfigName" max_length="40" name="configname" type="string"/>
         <element label="ID" max_length="40" name="id" type="integer"/>
         <element label="Job" max_length="40" name="job" type="integer"/>
@@ -7,8 +7,8 @@
         <element label="SessionId" max_length="40" name="sessionid" type="integer"/>
         <element label="SourceClass" max_length="40" name="sourceclass" type="string"/>
         <element label="SourceMethod" max_length="40" name="sourcemethod" type="string"/>
-        <element label="Stack" max_length="40" name="stack" type="string"/>
-        <element label="Text" max_length="40" name="text" type="string"/>
+        <element label="Stack" max_length="200" name="stack" type="string"/>
+        <element label="Text" max_length="200" name="text" type="string"/>
         <element label="TimeLogged" max_length="40" name="timelogged" type="glide_date_time"/>
         <element label="TraceCat" max_length="40" name="tracecat" type="string"/>
         <element label="Type" max_length="40" name="type" type="string"/>
